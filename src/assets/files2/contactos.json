@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "id": 1,
+      "name": "Han",
+      "State": "En el baño y que pasa?",
+      "description": "trabajando en el baño ",
+      "Image": "avatar-han.png"
+    },
+    {
+      "id": 2,
+      "name": "Luke",
+      "State": "ni te creas que est..",
+      "description": "A morir, a morir,... ¡vamos! ¿nadie?",
+      "Image": "avatar-luke.png"
+    },
+    {
+      "id": 3,
+      "name": "Leia",
+      "State": "Crisis existencial",
+      "description": "Alguien que me mantenga",
+      "Image": "avatar-leia.png"
+    }
+
+
+  ]
+
+}

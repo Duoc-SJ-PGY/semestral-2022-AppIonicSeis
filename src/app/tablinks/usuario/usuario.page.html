@@ -1,0 +1,39 @@
+<ion-header *ngFor="let usuario of searchedUsuario">
+    <ion-toolbar>
+        <ion-title>{{usuario.name}}</ion-title>
+              <ion-avatar slot="end">
+                  <img src="../../assets/contacto-img/{{usuario.icon}}"/>
+              </ion-avatar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list *ngFor="let usuario of searchedUsuario">
+        <ion-item>
+            <ion-label>Seguidores</ion-label>
+            <ion-badge color="primary">{{usuario.Seguidores}}</ion-badge>
+        </ion-item>
+        <ion-item>
+            <ion-label>Me Gusta</ion-label>
+            <ion-badge color="secondary">{{usuario.MeGusta}}</ion-badge>
+        </ion-item>
+        <ion-item>
+            <ion-label>Estrellas</ion-label>
+            <ion-badge color="tertiary">{{usuario.Estrellas}}</ion-badge>
+        </ion-item>
+        <ion-item>
+            <ion-label>Advertencias</ion-label>
+            <ion-badge color="warning">{{usuario.Advertencias}}</ion-badge>
+        </ion-item>
+        <ion-item>
+            <ion-label>Notificaciones</ion-label>
+            <ion-badge [routerLink]="['src/app/tablinks/notificaciones/notificaciones-routing.module.ts']">{{usuario.Notificaciones}}</ion-badge>
+        </ion-item>
+    </ion-list>
+
+    <ion-button (click)="gotoHome()">Ir Al Inicio</ion-button>
+</ion-content>
+
+<ion-footer>
+
+</ion-footer>

@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Notificaciones</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <p>
+    <ion-list *ngIf="permisoss">
+      <ion-item *ngFor="let notificaciones of searchedNotificaciones">
+        <ion-avatar slot="start">
+          <img src="../../assets/contacto-img/{{notificaciones.Image}}" />
+        </ion-avatar>
+        <ion-label>
+
+          <h2>{{notificaciones.name}}</h2>
+           <h3>{{notificaciones.description}}</h3>
+          <p>{{notificaciones.Date}}</p>
+          <p>{{notificaciones.hora}}</p>
+        </ion-label>
+        <ion-button slot="end">
+          <ion-icon name="notifications-circle-outline">
+          </ion-icon>
+        </ion-button>
+
+
+
+
+      </ion-item>
+    </ion-list>
+  </p>
+</ion-content>

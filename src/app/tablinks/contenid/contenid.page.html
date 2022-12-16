@@ -1,0 +1,20 @@
+<ion-header>
+<ion-title>{{name}}</ion-title>
+</ion-header>
+
+<ion-content>
+
+          <ion-card>
+
+            <img src="../../assets/contacto-img/{{image}}"/>
+            <ion-card-subtitle> </ion-card-subtitle>
+            <div class="desc">
+              {{description}}
+            </div>
+          </ion-card>
+
+  </ion-content>
+
+  <ion-footer>
+      <ion-button (click)="gotoHome()"><ion-icon name="arrow-undo-circle-outline"></ion-icon></ion-button>
+  </ion-footer>
